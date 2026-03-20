@@ -1,77 +1,167 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invila TM - Solusi Air Industri Zero CAPEX</title>
+    <title>Invila TM | Solusi Air Industri Zero CAPEX</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
-<body class="font-sans text-slate-900 bg-white">
+<body class="bg-white text-slate-900">
 
-    <nav class="p-6 flex justify-between items-center border-b">
-        <div class="text-2xl font-bold text-blue-900">Invila TM</div>
-        <a href="https://wa.me/6285219493322" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold">Konsultasi Project</a>
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tight text-blue-900">Invila TM</div>
+            <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+                <a href="#solusi" class="hover:text-blue-600">Solusi</a>
+                <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+                <a href="#teknologi" class="hover:text-blue-600">Teknologi</a>
+            </div>
+            <a href="https://wa.me/6285219493322" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-blue-200 text-sm">
+                Analisa Project
+            </a>
+        </div>
     </nav>
 
-    <section class="py-20 px-6 text-center bg-slate-50">
-        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-blue-900">
-            Hadirkan Air Industri yang Andal <br> <span class="text-blue-600">Tanpa Membebani Capex Perusahaan</span>
-        </h1>
-        <p class="text-xl mb-10 text-slate-600 max-w-3xl mx-auto">
-            Pay for Water, Not Infrastructure. Bangun, operasikan, dan tingkatkan kapasitas air industri Anda dengan model <strong>Water-as-a-Service</strong>.
-        </p>
-        <div class="flex flex-col md:flex-row justify-center gap-4">
-            <a href="https://wa.me/6285219493322" class="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-bold">Chat WhatsApp untuk Analisa Project</a>
-        </div>
-    </section>
-
-    <section class="py-12 border-y bg-white">
-        <p class="text-center text-sm font-semibold text-slate-400 uppercase tracking-widest mb-8">Telah Dipercaya Oleh</p>
-        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-8 items-center opacity-70">
-            <img src="petrokimia-gresik.png" alt="Petrokimia Gresik" class="h-12 object-contain mx-auto">
-            <img src="tirtanadi.png" alt="PDAM Tirtanadi" class="h-12 object-contain mx-auto">
-            <img src="tirta-asasta-depok.png" alt="Tirta Asasta" class="h-12 object-contain mx-auto">
-            <img src="united-tractors.png" alt="United Tractors" class="h-12 object-contain mx-auto">
-            <img src="kievit.png" alt="Kievit" class="h-12 object-contain mx-auto">
-            <img src="kiw.png" alt="KIW" class="h-12 object-contain mx-auto">
-            <img src="patria-maritim-perkasa.png" alt="Patria Maritim" class="h-12 object-contain mx-auto">
-            <img src="wika.png" alt="WIKA" class="h-12 object-contain mx-auto">
-            <img src="cemerlang-samudra-kontrindo.png" alt="Cemerlang Samudra" class="h-12 object-contain mx-auto">
-        </div>
-    </section>
-
-    <section class="py-20 container mx-auto px-6">
-        <div class="grid md:grid-cols-3 gap-12 text-center">
-            <div class="p-8 border rounded-2xl hover:shadow-xl transition">
-                <h3 class="text-xl font-bold mb-4 text-blue-900">Zero CAPEX</h3>
-                <p class="text-slate-600">Alihkan biaya infrastruktur menjadi Opex yang terukur. Anda hanya membayar per m³ air yang dihasilkan[cite: 19].</p>
+    <header class="relative pt-20 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-blue-50 to-white overflow-hidden">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest text-blue-700 uppercase bg-blue-100 rounded-full">Water-as-a-Service</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-blue-950 leading-tight mb-6">
+                Hadirkan Air Industri yang Andal <br class="hidden md:block"> 
+                <span class="text-blue-600">Tanpa Membebani Capex Perusahaan</span>
+            </h1>
+            <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+                <strong>Pay for Water, Not Infrastructure.</strong> Dapatkan suplai air berkualitas tanpa investasi awal yang berat. Kami membangun, mengoperasikan, dan menjamin performa sistem Anda.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/6285219493322" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-xl shadow-green-200 transition-transform hover:-translate-y-1">
+                    Chat WhatsApp untuk Analisa Project
+                </a>
             </div>
-            <div class="p-8 border rounded-2xl hover:shadow-xl transition border-blue-100 bg-blue-50">
-                <h3 class="text-xl font-bold mb-4 text-blue-900">Real-time Monitoring</h3>
-                <p class="text-slate-600">Transparansi data penuh dengan sistem <strong>SCADA-IoT</strong> untuk kontrol kualitas dan kuantitas 24/7[cite: 21].</p>
-            </div>
-            <div class="p-8 border rounded-2xl hover:shadow-xl transition">
-                <h3 class="text-xl font-bold mb-4 text-blue-900">Operasional Terjamin</h3>
-                <p class="text-slate-600">Tim ahli kami mengelola operasional penuh, memastikan sistem berjalan tanpa downtime bagi produksi Anda[cite: 16].</p>
+            <p class="mt-6 text-sm text-slate-500 font-medium italic italic">Model No CAPEX – Pay per m³ [cite: 19]</p>
+        </div>
+    </header>
+
+    <section class="py-12 bg-white border-y border-slate-100">
+        <div class="container mx-auto px-6">
+            <p class="text-center text-xs font-bold text-slate-400 uppercase tracking-widest mb-10">Telah Dipercaya Oleh Industri & PDAM</p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-10 items-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
+                <img src="petrokimia-gresik.png" alt="Petrokimia Gresik" class="h-10 mx-auto">
+                <img src="tirtanadi.png" alt="PDAM Tirtanadi" class="h-10 mx-auto">
+                <img src="tirta-asasta-depok.png" alt="Tirta Asasta" class="h-10 mx-auto">
+                <img src="united-tractors.png" alt="United Tractors" class="h-10 mx-auto">
+                <img src="kievit.png" alt="Kievit" class="h-10 mx-auto">
+                <img src="kiw.png" alt="KIW" class="h-10 mx-auto">
+                <img src="patria-maritim-perkasa.png" alt="Patria Maritim" class="h-10 mx-auto">
+                <img src="wika.png" alt="WIKA" class="h-10 mx-auto">
+                <img src="cemerlang-samudra-kontrindo.png" alt="Cemerlang Samudra" class="h-10 mx-auto">
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-white py-12 px-6">
-        <div class="container mx-auto grid md:grid-cols-2 gap-8 border-b border-slate-700 pb-8">
-            <div>
-                <h2 class="text-2xl font-bold mb-4">Invila TM</h2>
-                <p class="text-slate-400">Brand of <strong>PT. Invila Tirta Nusantara</strong></p>
-                <p class="text-slate-400 mt-2">Sentra Niaga 2 No. 5, Harapan Indah, Bekasi 17131, Jawa Barat[cite: 55].</p>
+    <section id="solusi" class="py-24 container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-3xl font-bold text-blue-950 mb-4">Mengapa Memilih Layanan Invila TM?</h2>
+            <p class="text-lg text-slate-600">Kami tidak menjual unit aset. Kami menjual hasil layanan: suplai air tersedia, kualitas terjaga, dan sistem yang berjalan transparan[cite: 15, 16].</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 font-bold">1</div>
+                <h3 class="font-bold text-xl mb-3">No CAPEX</h3>
+                <p class="text-slate-600 text-sm">Bebaskan arus kas perusahaan. Biaya investasi infrastruktur sepenuhnya ditanggung oleh kami[cite: 7, 19].</p>
             </div>
-            <div class="text-right">
-                <p class="font-bold text-lg text-blue-400">Hubungi Kami:</p>
-                <p class="text-xl">085219493322</p>
-                <p class="text-slate-400">Irfon Desman, SE, MBA (Marketing Manager)[cite: 4].</p>
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 font-bold">2</div>
+                <h3 class="font-bold text-xl mb-3">Operasi & Revamp</h3>
+                <p class="text-slate-600 text-sm">Kami melayani pembangunan baru maupun peningkatan kapasitas (uprating) sistem yang sudah ada[cite: 20, 39].</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-blue-100 bg-blue-50/50 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-6 font-bold">3</div>
+                <h3 class="font-bold text-xl mb-3">SCADA-IoT</h3>
+                <p class="text-slate-600 text-sm">Monitoring real-time sebagai tulang punggung transparansi data dan kontrol performa 24/7[cite: 21, 50].</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 font-bold">4</div>
+                <h3 class="font-bold text-xl mb-3">Reuse Proven</h3>
+                <p class="text-slate-600 text-sm">Implementasi teknologi daur ulang air limbah menjadi air bersih yang teruji secara industri[cite: 37, 40].</p>
             </div>
         </div>
-        <div class="text-center mt-8 text-slate-500 text-sm">
-            &copy; 2026 PT. Invila Tirta Nusantara. All Rights Reserved.
+    </section>
+
+    <section id="portfolio" class="py-24 bg-slate-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <h2 class="text-4xl font-bold mb-4 italic italic">Skala & Pengalaman Nyata</h2>
+                    <p class="text-slate-400 max-w-xl">Total kapasitas terbangun lebih dari <strong>2.400 LPS</strong> mencakup PDAM dan berbagai sektor industri strategis[cite: 11, 36].</p>
+                </div>
+                <div class="text-blue-400 font-bold text-5xl">2.400+ <span class="text-xl block text-slate-400">Liter Per Detik</span></div>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-700 text-slate-400 text-sm uppercase tracking-wider">
+                            <th class="py-4 px-4">Proyek / Klien</th>
+                            <th class="py-4 px-4">Kapasitas</th>
+                            <th class="py-4 px-4">Kategori</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800">
+                        <tr>
+                            <td class="py-6 px-4 font-bold">PT Petrokimia Gresik (Surabaya)</td>
+                            <td class="py-6 px-4 text-blue-400 font-semibold">833 LPS</td>
+                            <td class="py-6 px-4">Industri / New Build </td>
+                        </tr>
+                        <tr>
+                            <td class="py-6 px-4 font-bold">PDAM Tirtanadi Sunggal (Medan)</td>
+                            <td class="py-6 px-4 text-blue-400 font-semibold">>500 LPS</td>
+                            <td class="py-6 px-4">PDAM / Uprating + New Plant </td>
+                        </tr>
+                        <tr>
+                            <td class="py-6 px-4 font-bold">PDAM Tirta Asasta (Depok)</td>
+                            <td class="py-6 px-4 text-blue-400 font-semibold">300 LPS</td>
+                            <td class="py-6 px-4">Uprating 150 &rarr; 300 LPS </td>
+                        </tr>
+                        <tr>
+                            <td class="py-6 px-4 font-bold">PT Kievit Indonesia (Salatiga)</td>
+                            <td class="py-6 px-4 text-blue-400 font-semibold">3 LPS</td>
+                            <td class="py-6 px-4">Reuse / Advanced Treatment </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-blue-600 text-white text-center px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 italic italic">Siap Menghadirkan Solusi Air Tanpa Beban Modal?</h2>
+        <div class="bg-white/10 p-8 rounded-3xl max-w-2xl mx-auto backdrop-blur-sm border border-white/20">
+            <p class="mb-8 text-blue-50 leading-relaxed">Dapatkan analisa proyek awal langsung dari <strong>Marketing Manager</strong> kami. Kirimkan kebutuhan kapasitas dan lokasi perusahaan Anda.</p>
+            <a href="https://wa.me/6285219493322?text=Halo%20Pak%20Irfon,%20saya%20ingin%20diskusi%20kebutuhan%20air%20industri.%0ANama%20perusahaan:%20...%0ALokasi:%20...%0AKebutuhan:%20...%20m3/hari" class="inline-block bg-white text-blue-600 px-10 py-4 rounded-xl font-extrabold text-lg shadow-2xl transition-all hover:scale-105 hover:bg-slate-100">
+                Hubungi Irfon Desman, SE, MBA
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 py-16 border-t border-slate-200">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4 italic italic uppercase">Invila TM</h3>
+                    <p class="text-slate-500 font-semibold mb-2 italic italic italic italic">Brand of PT. Invila Tirta Nusantara [cite: 4, 46]</p>
+                    <p class="text-slate-500 text-sm italic italic italic italic italic italic">Sentra Niaga 2 No. 5, Harapan Indah, Bekasi 17131, Jawa Barat [cite: 55]</p>
+                </div>
+                <div class="md:text-right">
+                    <p class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic italic italic italic italic">Kontrak Utama</p>
+                    <p class="text-xl font-bold text-slate-800 italic italic italic italic italic italic">WhatsApp 085219493322 [cite: 4, 44]</p>
+                    <p class="text-slate-500 italic italic italic italic italic italic">Irfon Desman, SE, MBA &mdash; Marketing Manager [cite: 4, 44]</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-200 text-center text-xs text-slate-400 font-medium italic italic italic italic italic italic italic italic">
+                &copy; 2026 PT. Invila Tirta Nusantara. Semua informasi teknis (Aero-Shock Cooler, Hybrid Lamella Clarifier, Oxy-Pure) adalah properti intelektual Invila TM[cite: 51].
+            </div>
         </div>
     </footer>
 
