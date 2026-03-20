@@ -3,167 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invila TM | Solusi Air Industri Zero CAPEX</title>
+    <title>Invila TM | Water-as-a-Service Zero CAPEX</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .finance-card { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .saving-box { background: linear-gradient(135deg, #059669 0%, #064e3b 100%); }
+        .odometer-card { background-color: #0b1426; border-radius: 24px; }
+    </style>
 </head>
 <body class="bg-white text-slate-900">
 
     <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-extrabold tracking-tight text-blue-900">Invila TM</div>
-            <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+            <div class="text-2xl font-extrabold tracking-tighter text-blue-900 uppercase italic">Invila TM</div>
+            <div class="hidden md:flex space-x-8 font-bold text-xs uppercase tracking-widest text-slate-500">
                 <a href="#solusi" class="hover:text-blue-600">Solusi</a>
+                <a href="#analisis" class="hover:text-blue-600">Analisis Efisiensi</a>
                 <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
-                <a href="#teknologi" class="hover:text-blue-600">Teknologi</a>
             </div>
-            <a href="https://wa.me/6285219493322" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-blue-200 text-sm">
+            <a href="https://wa.me/6285219493322" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg shadow-blue-200 hover:bg-blue-700 transition">
                 Analisa Project
             </a>
         </div>
     </nav>
 
-    <header class="relative pt-20 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-blue-50 to-white overflow-hidden">
-        <div class="container mx-auto px-6 text-center relative z-10">
-            <span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest text-blue-700 uppercase bg-blue-100 rounded-full">Water-as-a-Service</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold text-blue-950 leading-tight mb-6">
-                Hadirkan Air Industri yang Andal <br class="hidden md:block"> 
-                <span class="text-blue-600">Tanpa Membebani Capex Perusahaan</span>
+    <header class="hero-gradient pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            <span class="inline-block px-4 py-1.5 mb-6 text-[10px] font-black tracking-[0.2em] text-blue-700 uppercase bg-blue-100 rounded-full">Water-as-a-Service [cite: 6, 18]</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-6 italic uppercase tracking-tighter">
+                Hadirkan Air Industri yang Andal <br> 
+                <span class="text-blue-600">Tanpa Membebani Capex Perusahaan [cite: 8, 32]</span>
             </h1>
-            <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-                <strong>Pay for Water, Not Infrastructure.</strong> Dapatkan suplai air berkualitas tanpa investasi awal yang berat. Kami membangun, mengoperasikan, dan menjamin performa sistem Anda.
+            <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+                <strong>Pay for Water, Not Infrastructure. [cite: 13, 32]</strong> Kami membangun, mengoperasikan, dan menjamin kualitas air Anda dengan model <strong>Zero Capex</strong>. [cite: 19]
             </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="https://wa.me/6285219493322" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-xl shadow-green-200 transition-transform hover:-translate-y-1">
-                    Chat WhatsApp untuk Analisa Project
-                </a>
-            </div>
-            <p class="mt-6 text-sm text-slate-500 font-medium italic italic">Model No CAPEX – Pay per m³ [cite: 19]</p>
+            <a href="https://wa.me/6285219493322" class="inline-block bg-green-600 hover:bg-green-700 text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-green-200 transition-transform hover:-translate-y-1 uppercase italic tracking-tighter">
+                Chat WhatsApp untuk Analisa Project [cite: 13, 44]
+            </a>
         </div>
     </header>
 
-    <section class="py-12 bg-white border-y border-slate-100">
+    <section class="py-12 bg-white">
         <div class="container mx-auto px-6">
-            <p class="text-center text-xs font-bold text-slate-400 uppercase tracking-widest mb-10">Telah Dipercaya Oleh Industri & PDAM</p>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-10 items-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all">
-                <img src="petrokimia-gresik.png" alt="Petrokimia Gresik" class="h-10 mx-auto">
-                <img src="tirtanadi.png" alt="PDAM Tirtanadi" class="h-10 mx-auto">
-                <img src="tirta-asasta-depok.png" alt="Tirta Asasta" class="h-10 mx-auto">
-                <img src="united-tractors.png" alt="United Tractors" class="h-10 mx-auto">
-                <img src="kievit.png" alt="Kievit" class="h-10 mx-auto">
-                <img src="kiw.png" alt="KIW" class="h-10 mx-auto">
-                <img src="patria-maritim-perkasa.png" alt="Patria Maritim" class="h-10 mx-auto">
-                <img src="wika.png" alt="WIKA" class="h-10 mx-auto">
-                <img src="cemerlang-samudra-kontrindo.png" alt="Cemerlang Samudra" class="h-10 mx-auto">
-            </div>
-        </div>
-    </section>
-
-    <section id="solusi" class="py-24 container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center mb-16">
-            <h2 class="text-3xl font-bold text-blue-950 mb-4">Mengapa Memilih Layanan Invila TM?</h2>
-            <p class="text-lg text-slate-600">Kami tidak menjual unit aset. Kami menjual hasil layanan: suplai air tersedia, kualitas terjaga, dan sistem yang berjalan transparan[cite: 15, 16].</p>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
-                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 font-bold">1</div>
-                <h3 class="font-bold text-xl mb-3">No CAPEX</h3>
-                <p class="text-slate-600 text-sm">Bebaskan arus kas perusahaan. Biaya investasi infrastruktur sepenuhnya ditanggung oleh kami[cite: 7, 19].</p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
-                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 font-bold">2</div>
-                <h3 class="font-bold text-xl mb-3">Operasi & Revamp</h3>
-                <p class="text-slate-600 text-sm">Kami melayani pembangunan baru maupun peningkatan kapasitas (uprating) sistem yang sudah ada[cite: 20, 39].</p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl border border-blue-100 bg-blue-50/50 shadow-sm hover:shadow-md transition">
-                <div class="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center mb-6 font-bold">3</div>
-                <h3 class="font-bold text-xl mb-3">SCADA-IoT</h3>
-                <p class="text-slate-600 text-sm">Monitoring real-time sebagai tulang punggung transparansi data dan kontrol performa 24/7[cite: 21, 50].</p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
-                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 font-bold">4</div>
-                <h3 class="font-bold text-xl mb-3">Reuse Proven</h3>
-                <p class="text-slate-600 text-sm">Implementasi teknologi daur ulang air limbah menjadi air bersih yang teruji secara industri[cite: 37, 40].</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="py-24 bg-slate-900 text-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                <div>
-                    <h2 class="text-4xl font-bold mb-4 italic italic">Skala & Pengalaman Nyata</h2>
-                    <p class="text-slate-400 max-w-xl">Total kapasitas terbangun lebih dari <strong>2.400 LPS</strong> mencakup PDAM dan berbagai sektor industri strategis[cite: 11, 36].</p>
+            <div class="odometer-card p-10 text-white relative overflow-hidden">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                    <div>
+                        <h2 class="text-xl font-black uppercase italic tracking-tight">Akumulasi Kapasitas Terpasang [cite: 11, 36]</h2>
+                        <p class="text-slate-400 text-sm italic">Rekam jejak sejak 2013 [cite: 36]</p>
+                    </div>
+                    <button onclick="resetAndPlay()" class="bg-white/10 hover:bg-blue-600 border border-white/20 text-white px-6 py-3 rounded-xl font-bold text-xs transition uppercase tracking-widest flex items-center gap-3">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M23 4v6h-6"></path><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+                        Turn On Water Meter
+                    </button>
                 </div>
-                <div class="text-blue-400 font-bold text-5xl">2.400+ <span class="text-xl block text-slate-400">Liter Per Detik</span></div>
-            </div>
-            
-            <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse">
-                    <thead>
-                        <tr class="border-b border-slate-700 text-slate-400 text-sm uppercase tracking-wider">
-                            <th class="py-4 px-4">Proyek / Klien</th>
-                            <th class="py-4 px-4">Kapasitas</th>
-                            <th class="py-4 px-4">Kategori</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-800">
-                        <tr>
-                            <td class="py-6 px-4 font-bold">PT Petrokimia Gresik (Surabaya)</td>
-                            <td class="py-6 px-4 text-blue-400 font-semibold">833 LPS</td>
-                            <td class="py-6 px-4">Industri / New Build </td>
-                        </tr>
-                        <tr>
-                            <td class="py-6 px-4 font-bold">PDAM Tirtanadi Sunggal (Medan)</td>
-                            <td class="py-6 px-4 text-blue-400 font-semibold">>500 LPS</td>
-                            <td class="py-6 px-4">PDAM / Uprating + New Plant </td>
-                        </tr>
-                        <tr>
-                            <td class="py-6 px-4 font-bold">PDAM Tirta Asasta (Depok)</td>
-                            <td class="py-6 px-4 text-blue-400 font-semibold">300 LPS</td>
-                            <td class="py-6 px-4">Uprating 150 &rarr; 300 LPS </td>
-                        </tr>
-                        <tr>
-                            <td class="py-6 px-4 font-bold">PT Kievit Indonesia (Salatiga)</td>
-                            <td class="py-6 px-4 text-blue-400 font-semibold">3 LPS</td>
-                            <td class="py-6 px-4">Reuse / Advanced Treatment </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="grid md:grid-cols-2 gap-12 mt-12 pt-10 border-t border-white/10">
+                    <div>
+                        <p class="text-blue-400 text-[10px] font-black uppercase tracking-[0.3em] mb-2">Kapasitas Per Bulan</p>
+                        <div class="text-5xl md:text-6xl font-black italic tracking-tighter flex items-baseline">
+                            <span class="odometer" data-target="6500700">0</span>
+                            <span class="text-xl text-slate-500 ml-4 font-bold not-italic">m³</span>
+                        </div>
+                    </div>
+                    <div class="md:border-l md:border-white/10 md:pl-12">
+                        <p class="text-blue-400 text-[10px] font-black uppercase tracking-[0.3em] mb-2">Kapasitas Per Tahun</p>
+                        <div class="text-5xl md:text-6xl font-black italic tracking-tighter flex items-baseline">
+                            <span class="odometer" data-target="78008400">0</span>
+                            <span class="text-xl text-slate-500 ml-4 font-bold not-italic">m³</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-blue-600 text-white text-center px-6">
-        <h2 class="text-3xl md:text-4xl font-bold mb-8 italic italic">Siap Menghadirkan Solusi Air Tanpa Beban Modal?</h2>
-        <div class="bg-white/10 p-8 rounded-3xl max-w-2xl mx-auto backdrop-blur-sm border border-white/20">
-            <p class="mb-8 text-blue-50 leading-relaxed">Dapatkan analisa proyek awal langsung dari <strong>Marketing Manager</strong> kami. Kirimkan kebutuhan kapasitas dan lokasi perusahaan Anda.</p>
-            <a href="https://wa.me/6285219493322?text=Halo%20Pak%20Irfon,%20saya%20ingin%20diskusi%20kebutuhan%20air%20industri.%0ANama%20perusahaan:%20...%0ALokasi:%20...%0AKebutuhan:%20...%20m3/hari" class="inline-block bg-white text-blue-600 px-10 py-4 rounded-xl font-extrabold text-lg shadow-2xl transition-all hover:scale-105 hover:bg-slate-100">
-                Hubungi Irfon Desman, SE, MBA
-            </a>
-        </div>
-    </section>
-
-    <footer class="bg-slate-50 py-16 border-t border-slate-200">
+    <section class="py-16 bg-slate-50 border-y border-slate-100">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 mb-12">
+            <h3 class="text-center text-[10px] font-black text-slate-400 uppercase tracking-[0.4em] mb-12 italic">Mitra Industri Strategis [cite: 34, 40]</h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+                <img src="petrokimia-gresik.png" alt="Petrokimia" class="h-10 mx-auto object-contain">
+                <img src="tirtanadi.png" alt="Tirtanadi" class="h-10 mx-auto object-contain">
+                <img src="united-tractors.png" alt="United Tractors" class="h-10 mx-auto object-contain">
+                <img src="wika.png" alt="WIKA" class="h-10 mx-auto object-contain">
+                <img src="kievit.png" alt="Kievit" class="h-10 mx-auto object-contain">
+            </div>
+        </div>
+    </section>
+
+    <section id="analisis" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto space-y-8">
+                <div class="bg-white rounded-[2.5rem] shadow-2xl border border-slate-200 overflow-hidden">
+                    <div class="p-10 border-b border-slate-100 bg-slate-50 flex flex-col md:flex-row justify-between items-center gap-6">
+                        <div>
+                            <h2 class="text-3xl font-black text-slate-800 italic uppercase tracking-tighter leading-none">Analisis Efisiensi Biaya Air [cite: 25, 28]</h2>
+                            <p class="text-slate-500 text-sm font-bold mt-2 italic uppercase tracking-widest">Skema Zero CAPEX: PDAM vs Invila™ WaaS [cite: 19]</p>
+                        </div>
+                        <div class="bg-blue-100 text-blue-700 px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest">
+                            Adjust Harga Invila: 2% / Tahun
+                        </div>
+                    </div>
+
+                    <div class="p-10 grid md:grid-cols-3 gap-8">
+                        <div class="space-y-3">
+                            <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest italic">Kapasitas (m³/hari)</label>
+                            <input type="number" id="vol_total" value="2000" oninput="updateDashboard()" class="w-full border-2 border-slate-200 p-5 rounded-2xl text-2xl font-black outline-none focus:border-blue-600 shadow-inner italic">
+                        </div>
+                        <div class="space-y-3">
+                            <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest italic">Tarif PDAM (Rp/m³)</label>
+                            <input type="number" id="pdam_price" value="14600" oninput="updateDashboard()" class="w-full border-2 border-slate-200 p-5 rounded-2xl text-2xl font-black outline-none focus:border-blue-600 shadow-inner italic">
+                        </div>
+                        <div class="space-y-3">
+                            <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest italic">Tarif Dasar Invila (Rp/m³)</label>
+                            <input type="number" id="invila_price" value="6900" oninput="updateDashboard()" class="w-full bg-blue-50 border-2 border-blue-200 p-5 rounded-2xl text-2xl font-black outline-none focus:border-blue-600 text-blue-700 shadow-inner italic">
+                        </div>
+                    </div>
+
+                    <div class="p-10 grid md:grid-cols-2 gap-8 bg-slate-50">
+                        <div class="saving-box rounded-[2.5rem] p-10 text-white shadow-2xl relative overflow-hidden border-b-8 border-emerald-900">
+                            <p class="text-xs font-black uppercase opacity-80 mb-4 italic tracking-widest">Total Saving (5 Tahun) [cite: 28]</p>
+                            <div id="five_year_saving" class="text-5xl md:text-6xl font-black italic tracking-tighter">Rp 0</div>
+                        </div>
+                        <div class="finance-card rounded-[2.5rem] p-10 text-white shadow-2xl border-b-8 border-slate-950">
+                            <p class="text-xs font-black uppercase text-amber-400 mb-4 italic tracking-widest">Aset Gratis dari Invila™ [cite: 19]</p>
+                            <div id="asset_value" class="text-5xl font-black text-amber-400 italic tracking-tighter">Rp 0</div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-10 space-y-12">
+                        <div class="h-[400px] w-full">
+                            <canvas id="costChart"></canvas>
+                        </div>
+                        <div class="overflow-x-auto rounded-3xl border border-slate-100">
+                            <table class="w-full text-right border-collapse bg-white">
+                                <thead class="bg-slate-50 text-[10px] font-black uppercase text-slate-400 tracking-widest">
+                                    <tr>
+                                        <th class="p-6 text-left">Tahun</th>
+                                        <th class="p-6">Tarif Invila</th>
+                                        <th class="p-6">Biaya PDAM (Accum)</th>
+                                        <th class="p-6 bg-emerald-50 text-emerald-700">Net Saving</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table_body" class="text-sm font-bold"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button onclick="kirimWA()" class="w-full md:w-auto bg-slate-900 hover:bg-black text-white px-16 py-7 rounded-2xl text-xl font-black transition transform active:scale-95 shadow-2xl uppercase italic tracking-tighter">
+                        Konsultasi SPAM via WhatsApp [cite: 13, 44]
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 border-b border-white/10 pb-16">
                 <div>
-                    <h3 class="text-2xl font-bold text-blue-900 mb-4 italic italic uppercase">Invila TM</h3>
-                    <p class="text-slate-500 font-semibold mb-2 italic italic italic italic">Brand of PT. Invila Tirta Nusantara [cite: 4, 46]</p>
-                    <p class="text-slate-500 text-sm italic italic italic italic italic italic">Sentra Niaga 2 No. 5, Harapan Indah, Bekasi 17131, Jawa Barat [cite: 55]</p>
+                    <h2 class="text-3xl font-black mb-4 italic uppercase tracking-tighter text-blue-500">Invila TM [cite: 4, 48]</h2>
+                    <p class="text-slate-400 font-bold mb-2 italic">Brand of PT. Invila Tirta Nusantara [cite: 4, 49]</p>
+                    <p class="text-slate-500 text-sm leading-relaxed italic max-w-sm">Sentra Niaga 2 No. 5, Harapan Indah, Bekasi 17131, Jawa Barat. [cite: 4, 55]</p>
                 </div>
                 <div class="md:text-right">
-                    <p class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4 italic italic italic italic italic italic">Kontrak Utama</p>
-                    <p class="text-xl font-bold text-slate-800 italic italic italic italic italic italic">WhatsApp 085219493322 [cite: 4, 44]</p>
-                    <p class="text-slate-500 italic italic italic italic italic italic">Irfon Desman, SE, MBA &mdash; Marketing Manager [cite: 4, 44]</p>
+                    <p class="text-xs font-black text-slate-500 uppercase tracking-widest mb-6 italic">Kontak Strategis [cite: 4]</p>
+                    <p class="text-3xl font-black italic tracking-tighter mb-2">085219493322 [cite: 4, 44]</p>
+                    <p class="text-blue-400 font-bold italic">Irfon Desman, SE, MBA &mdash; Marketing Manager [cite: 4, 44]</p>
                 </div>
             </div>
-            <div class="pt-8 border-t border-slate-200 text-center text-xs text-slate-400 font-medium italic italic italic italic italic italic italic italic">
-                &copy; 2026 PT. Invila Tirta Nusantara. Semua informasi teknis (Aero-Shock Cooler, Hybrid Lamella Clarifier, Oxy-Pure) adalah properti intelektual Invila TM[cite: 51].
+            <div class="pt-10 text-center text-[10px] text-slate-600 font-bold uppercase tracking-[0.3em] italic">
+                &copy; 2026 PT. Invila Tirta Nusantara. Seluruh informasi teknologi adalah properti intelektual Invila TM. [cite: 55]
             </div>
         </div>
     </footer>
 
+    <script>
+        // Odometer Animation
+        const formatNumber = (num) => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        function animateOdometer(el) {
+            const target = +el.getAttribute('data-target');
+            const duration = 2500;
+            const frameRate = 1000 / 60;
+            const totalFrames = Math.round(duration / frameRate);
+            let currentFrame = 0;
+            const count = () => {
+                currentFrame++;
+                const progress = currentFrame / totalFrames;
+                const easeOutQuad = 1 - (1 - progress) * (1 - progress);
+                const currentNumber = Math.round(target * easeOutQuad);
+                el.innerText = formatNumber(currentNumber);
+                if (currentFrame < totalFrames) requestAnimationFrame(count);
+                else el.innerText = formatNumber(target);
+            };
+            count();
+        }
+        function resetAndPlay() {
+            document.querySelectorAll('.odometer').forEach(el => {
+                el.innerText = "0";
+                setTimeout(() => animateOdometer(el), 100);
+            });
+        }
+
+        // Finance Dashboard Logic
+        let myChart;
+        function updateDashboard() {
+            const vol = parseFloat(document.getElementById('vol_total').value) || 0;
+            const pdamTariff = parseFloat(document.getElementById('pdam_price').value) || 0;
+            const invilaBaseTariff = parseFloat(document.getElementById('invila_price').value) || 0;
+            const fmt = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 });
+
+            // CAPEX Calculation (Estimasi Aset)
+            const lps = vol / 86.4;
+            const assetValue = lps * 350000000; // Standar industri estimasi
+            document.getElementById('asset_value').innerText = fmt.format(assetValue).replace("Rp", "Rp ");
+
+            // 5 Year Projection
+            let labels = [], pdamAcc = [], invilaAcc = [], tableHtml = '';
+            let curInvilaTariff = invilaBaseTariff;
+            let sumSaving = 0, sumPdam = 0, sumInvila = 0;
+
+            for (let i = 1; i <= 5; i++) {
+                labels.push('Thn ' + i);
+                const yearlyPdam = pdamTariff * vol * 30 * 12;
+                const yearlyInvila = curInvilaTariff * vol * 30 * 12;
+                sumPdam += yearlyPdam;
+                sumInvila += yearlyInvila;
+                sumSaving += (yearlyPdam - yearlyInvila);
+                pdamAcc.push(sumPdam);
+                invilaAcc.push(sumInvila);
+
+                tableHtml += `<tr class="border-b border-slate-50 italic">
+                    <td class="p-6 text-left font-black text-slate-800">Tahun ${i}</td>
+                    <td class="p-6 text-blue-600 font-black">Rp ${Math.round(curInvilaTariff).toLocaleString('id-ID')}</td>
+                    <td class="p-6 text-slate-400">${fmt.format(sumPdam)}</td>
+                    <td class="p-6 bg-emerald-50 text-emerald-700 font-black">${fmt.format(sumSaving)}</td>
+                </tr>`;
+                curInvilaTariff *= 1.02; // Penyesuaian 2% sesuai dokumen
+            }
+
+            document.getElementById('five_year_saving').innerText = fmt.format(sumSaving).replace("Rp", "Rp ");
+            document.getElementById('table_body').innerHTML = tableHtml;
+            renderChart(labels, pdamAcc, invilaAcc);
+        }
+
+        function renderChart(labels, dPdam, dInvila) {
+            const ctx = document.getElementById('costChart').getContext('2d');
+            if (myChart) myChart.destroy();
+            myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        { label: 'Akumulasi PDAM', data: dPdam, borderColor: '#0f172a', borderWidth: 4, pointRadius: 6, fill: false, tension: 0.2 },
+                        { label: 'Akumulasi Invila (WaaS)', data: dInvila, borderColor: '#10b981', borderWidth: 4, backgroundColor: 'rgba(16, 185, 129, 0.1)', fill: true, tension: 0.2 }
+                    ]
+                },
+                options: { 
+                    responsive: true, 
+                    maintainAspectRatio: false,
+                    plugins: { legend: { position: 'bottom', labels: { font: { weight: '800', size: 10, family: 'Plus Jakarta Sans' } } } },
+                    scales: { 
+                        y: { ticks: { callback: v => 'Rp ' + (v/1e9).toFixed(1) + ' M' }, grid: { color: '#f8fafc' } },
+                        x: { grid: { display: false } }
+                    }
+                }
+            });
+        }
+
+        function kirimWA() {
+            const vol = document.getElementById('vol_total').value;
+            const saving = document.getElementById('five_year_saving').innerText;
+            const msg = `Halo Pak Irfon, saya ingin diskusi kebutuhan air industri. \n\nKapasitas: ${vol} m3/hari\nEstimasi Saving: ${saving} (5 Thn).\n\nMohon bantu analisa project kami.`;
+            window.open(`https://wa.me/6285219493322?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+
+        // Initialize on Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateOdometer(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.odometer').forEach(odo => observer.observe(odo));
+        window.onload = updateDashboard;
+    </script>
 </body>
 </html>
